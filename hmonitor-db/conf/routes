@@ -1,0 +1,28 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+GET         /                       controllers.MainController.index()
+# Create/modify user
+POST        /user                   controllers.UserController.create
+# Get user by id
+GET         /user/:id               controllers.UserController.get(id: model.UserId)
+# Modify user by id
+PUT         /user                   controllers.UserController.update
+# Delete user by id
+DELETE      /user/:id               controllers.UserController.delete(id: model.UserId)
+
+# Create/modify obesity row for user by user's id
+POST        /obesity                controllers.ObesityController.create
+# Get obesity rows for user by obesity id
+GET         /obesity/:id            controllers.ObesityController.get(id: model.ObesityId)
+# Get obesity rows for user by user's id
+GET         /obesity/:id/all        controllers.ObesityController.getAll(id: model.UserId)
+# Modify obesity row for user by user's id
+PUT         /obesity                controllers.ObesityController.update
+# Mark as deleted obesity row for user by id
+DELETE      /obesity/:id            controllers.ObesityController.delete(id: model.ObesityId)
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET         /assets/*file           controllers.Assets.at(path="/public", file)

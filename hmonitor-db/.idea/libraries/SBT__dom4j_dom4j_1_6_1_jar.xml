@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="SBT: dom4j:dom4j:1.6.1:jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../tools/typesafe/activator-1.3.2/repository/dom4j/dom4j/1.6.1/jars/dom4j.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
