@@ -32,3 +32,5 @@ server.pid
 /hmonitor-db/dist/
 /hmonitor-db/.cache
 /hmonitor-db/activator*
+/hmonitor-db/.idea
+/hmonitor-db/.sbt*
